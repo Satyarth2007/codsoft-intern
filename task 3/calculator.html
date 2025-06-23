@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="inputBox">
+      <input type="text" id="EnterVal" readonly />
+    </div>
+
+    <div class="inputPrint">        
+      <div class="firstRow">
+        <button onclick="cleanInput()">C</button>
+        <button onclick="appendValue('()')">()</button>
+        <button onclick="appendValue('%')">%</button>
+        <button onclick="appendValue('/')">/</button>
+      </div>
+
+      <div class="secondRow">
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('*')">*</button>
+      </div>
+
+      <div class="thirdRow">
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('-')">-</button>
+      </div>
+
+      <div class="forthRow">
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
+        <button onclick="appendValue('+')">+</button>
+      </div>
+
+      <div class="fifthRow">
+        <button onclick="backspace()">x</button> <!-- Backspace -->
+        <button onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+        <button onclick="calculateResult()">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
